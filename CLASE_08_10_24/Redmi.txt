@@ -1,0 +1,20 @@
+- Se inicializa en cero porque es el elemento NEUTRO de la suma
+# SUBPROGRAMA.- Son bloques de código a los que les pongo un nombre para utilizarlos.
+ - Emsamblador.- Primer lenguaje creado.
+ - No se llaman FUNCIONES sino subprogramas.
+ - Siempre que vaya a DEVOLVER una sola cosa , pienso en una FUNCIÓN. Ejemplo: PROMPT
+ - PROCEDIMIENTO.- No DEVUELVE nada, solo muestra. Ejemplo: ALERT
+ - PARÁMETRO.- información que viene del exterior y que permite que el programa trabaje solo.
+  - Entrada.- Valor que voy a usar y no voy a modificar.
+  - Salida.- 
+# En JAVA SCRIPT, solo existen los parámetros de entrada.
+
+# FUNCIONES
+  - Si se llega a ejecutar un RETURN la función se ACABA.
+# FUNCIÓN EXPRESIÓN.- Podemos asignar una función completa a una variable o constante
+ - Se ponen sin nombre (anónimas).
+# FUNCIONES FLECHA.- Son anónimas, 
+ - Notación inline.- Cuando hay una solo línea
+ - Si tengo un solo parámetro le puedo quitar los paréntesis.
+ - Deben estar dentro de una constante o una variable, para poder llamarla.
+ 
