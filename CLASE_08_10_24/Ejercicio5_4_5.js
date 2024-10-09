@@ -1,33 +1,36 @@
 /* 
-4. Almacena en dos variables datos de validación (usuario y contraseña) correctos y permite que el usuario valide (dispone de 3 intentos).
+5. Solicita al usuario una letra, si inserta una a muestra el número 7, si es una b, el 9, si es una c el 101 y si no es ninguno de los tres, indícale que se ha equivocado de letra
 */
 var frase = "BIENVENIDO A MI PROGRAMA";
 alert(frase);
 
 //Entradas:
-
-let user = "";
-let pass = "";
-let user2 = "Rolando";
-let pass2 = "1234";
-let attempt = 0;
+let option1 = prompt("Inserta una letra: (a, b o c) ");
 
 
-// Salidas:
-do {
-    user = prompt("Escribe el nombre de Usuario:");
-    pass = prompt("Escribe la clave de Usuario:");
-    if (user === user2 && pass === pass2) {
-        alert("Usuario identificado");
+switch (option1) {
+    case "a":
+        alert("Hola número 7"); // Salidas:
         break;
-    }else {
-        alert("Vuelve a intentarlo.");
-        attempt++;
-        alert("Has usado " + attempt + " de 3 intentos");
-    }
 
-} while (attempt < 3) 
+    case "b":
+        alert("Hola número 9"); // Salidas:
+        break;
 
- 
+    case "c":
+        alert("Hola número 101"); // Salidas:
+        break;
 
- 
+    default:
+        alert(option1 + " No es la letra requerida") // Salidas:
+        break;
+}
+
+
+
+
+
+
+
+
+
