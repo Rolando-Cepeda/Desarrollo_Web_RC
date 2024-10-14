@@ -1,0 +1,29 @@
+
+<!DOCTYPE html>
+<html lang="es">
+    <head> <meta charset="UTF-8" />
+        <title>Ejemplo de estilos selector descendente</title>
+        <style type="text/css">
+            /* p span { color: red; }
+            h1 span { color: blue; } */
+            p * a { color: red; }
+            /* El selector p * a se aplica a todos los enlaces <a> que estén anidados dentro de otro elemento dentro de un <p>. */
+        </style>
+        </head>
+        <body>
+            <section>
+                <!-- <h1> <span>Titulo en Azul</span></h1>
+                <p> Aquí tenemos parte del texto <span>en rojo</span>.
+                    <br />
+                    Incluso en un nivel inferior, como un
+                    <a href="#"><span>enlace</span></a>
+                </p>
+                <br>
+                Fuera del párrafo el <span> SPAN se mantiene negro</span> -->
+               
+    ...
+    <p><a href="#">Enlace</a></p>
+    <p><span><a href="#">Enlace</a></span></p>
+            </section>
+    </body>
+</html>
