@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+
+<body>
+
+	<script>
+		/* 
+		 Haz una función que obtenga el maximo numero de un array
+		 
+		*/
+
+		function maxNumInArray(array, maxNum) {
+
+			if (array.length == 0) {
+				return maxNum;
+			} else {
+				if (array[array.length - 1] > maxNum) {
+					maxNum = array[array.length - 1];
+				}
+				array.pop();
+				return maxNumInArray(array, maxNum);
+			};
+
+		};
+
+		let array = [20, 4, 8, 10, 58, 60, -54, 8];
+
+		console.log('El mayor número del array [' + array + ']' + '\nes: ' + maxNumInArray(array, -Infinity));
+
+
+
+	</script>
+
+
+</body>
+
+</html>
