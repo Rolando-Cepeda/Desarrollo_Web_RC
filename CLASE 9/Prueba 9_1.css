@@ -1,0 +1,7 @@
+
+#prueba {
+	display: flex;
+	background-color: aqua;
+	position: relative;
+    top: 40px; left: 40px;
+}
