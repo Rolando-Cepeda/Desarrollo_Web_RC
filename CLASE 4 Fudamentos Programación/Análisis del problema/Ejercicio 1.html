@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 1</title>
+</head>
+
+<body>
+
+    <script>
+        /* Realiza un análisis del problema de un software que permita sumar o restar (una sóla opción por ejecución) números enteros.
+        Objetivo: El software debe permitir al usuario realizar una operación de suma o de resta entre dos números enteros. Solo se puede elegir una operación por cada ejecución del programa.
+         Entrada: El usuario debe ingresar dos números enteros y seleccionar una operación (suma o resta).
+         Proceso: Según la operación seleccionada, se realiza la suma o la resta entre los dos números ingresados.
+         Salida: El resultado de la operación elegida (suma o resta) debe ser mostrado al usuario.
+        */
+        function calcular(operacion, num1, num2) {
+            if (operacion === "sumar") {
+                return num1 + num2;
+            } else if (operacion === "restar") {
+                return num1 - num2;
+            } else {
+                return "Operación no válida";
+            }
+        }
+
+        // Ejemplo de uso:
+        console.log(calcular("sumar", 5, 3)); // Resultado: 8
+        console.log(calcular("restar", 5, 3)); // Resultado: 2
+
+    </script>
+
+</body>
+
+</html>

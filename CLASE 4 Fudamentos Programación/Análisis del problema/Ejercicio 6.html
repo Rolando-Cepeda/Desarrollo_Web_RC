@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 6 Análisis del problema</title>
+</head>
+
+<body>
+    <script>
+        /* Realiza un análisis del problema de un software que permita validar a un usuario con su contraseña, ofreciéndole N intentos (N es un número entre 1 y 5 y se le asigna a cada usuario aleatoriamente). Si falla sus intentos, debe esperar entre 5 y 20 minutos (también se decide de forma aleatoria)
+
+        Objetivo: El software debe validar si el usuario ingresa la contraseña correcta en un número limitado de intentos (N intentos, donde N es un valor entre 1 y 5, asignado aleatoriamente). Si el usuario falla todos sus intentos, debe esperar un tiempo entre 5 y 20 minutos (también asignado de manera aleatoria) antes de poder volver a intentarlo.
+        Entrada: El usuario debe ingresar su nombre de usuario y su contraseña.
+        Proceso:
+        El software asigna de forma aleatoria el número de intentos permitidos (entre 1 y 5) y el tiempo de espera en caso de que falle todos los intentos (entre 5 y 20 minutos).
+        El usuario intenta ingresar la contraseña correcta. Si es correcta, se valida el acceso.
+        Si el usuario falla en todos los intentos, se le informa que debe esperar antes de poder volver a intentar.
+        Salida:
+        Si el usuario ingresa la contraseña correcta, se muestra un mensaje de éxito y se otorga acceso.
+        Si el usuario falla, se le informa cuántos intentos le quedan.
+        Si se agotan los intentos, se le informa del tiempo de espera antes de un nuevo intento.
+         */
+
+        function validarUsuario(usuario, contrasena, contrasenaCorrecta) {
+            let intentos = Math.floor(Math.random() * 5) + 1;
+            let tiempoEspera = Math.floor(Math.random() * 16) + 5;
+
+            while (intentos > 0) {
+                if (contrasena === contrasenaCorrecta) {
+                    return "Acceso concedido";
+                } else {
+                    intentos--;
+                    console.log(`Contraseña incorrecta. Te quedan ${intentos} intentos.`);
+                }
+            }
+
+            if (intentos === 0) {
+                return `Has fallado todos los intentos. Espera ${tiempoEspera} minutos.`;
+            }
+        }
+
+        // Ejemplo de uso:
+        console.log(validarUsuario("Santiago", "1234", "abcd")); // Resultado variado
+
+
+    </script>
+</body>
+
+</html>

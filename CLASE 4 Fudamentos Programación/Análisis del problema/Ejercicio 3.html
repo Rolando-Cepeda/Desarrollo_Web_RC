@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 3 Análisis del problema</title>
+</head>
+
+<body>
+    <script>
+        /* 
+        3.- Realiza un análisis del problema de un software que permita contar las cantidad de veces que aparece la letra a en una frase solicitada al usuario
+        Objetivo: El software debe contar cuántas veces aparece la letra 'a' en una frase proporcionada por el usuario.
+        Entrada: El usuario debe ingresar una frase.
+        Proceso: El software debe buscar todas las apariciones de la letra 'a' en la frase y contar cuántas veces aparece.
+        Salida: El software debe mostrar el número de veces que aparece la letra 'a' en la frase ingresada.
+        */
+        function contarA(frase) {
+            let contador = 0;
+            for (let i = 0; i < frase.length; i++) {
+                if (frase[i].toLowerCase() === 'a') {
+                    contador++;
+                }
+            }
+            return contador;
+        }
+
+        // Ejemplo de uso:
+        console.log(contarA("La casa es agradable")); // Resultado: 4
+
+
+    </script>
+</body>
+
+</html>

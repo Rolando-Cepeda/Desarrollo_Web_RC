@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 4 Análisis del problema</title>
+</head>
+
+<body>
+    <script>
+        /* Realiza un análisis del problema de un software que permita indcar si un número entero es par o impar.
+        Objetivo: El software debe determinar si un número entero ingresado por el usuario es par o impar.
+        Entrada: El usuario debe ingresar un número entero.
+        Proceso: El software debe verificar si el número es divisible por 2. Si es divisible por 2, es par; si no, es impar.
+        Salida: El software debe mostrar si el número ingresado es par o impar.
+         */
+        function esParOImpar(numero) {
+            if (numero % 2 === 0) {
+                return "El número es par";
+            } else {
+                return "El número es impar";
+            }
+        }
+
+        // Ejemplo de uso:
+        console.log(esParOImpar(4)); // Resultado: El número es par
+        console.log(esParOImpar(7)); // Resultado: El número es impar
+
+
+    </script>
+</body>
+
+</html>
