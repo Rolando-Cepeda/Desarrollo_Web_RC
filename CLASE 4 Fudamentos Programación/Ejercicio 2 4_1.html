@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="Ejercicio 2 4_1.js"></script>
+</head>
+<body>
+   
+    <!-- Ejercicios
+Realiza una página en HTML, que disponga de dos botones, uno de ellos tendrá el texto "Saludar" y al pulsarlo nos indicará "Hola!!"; el segundo tendrá el texto "Despedir", al pulsarlo nos dirá "Adiós!!". Para dar funcionalidad a los botones debes usar JavaScript.
+JAVASCRIPT -> onclick="alert('Hola')"
+-->
+
+<button onclick="alert('Hola')">SALUDAR</button>
+<br>
+<br>
+<button onclick="alert('Adiós!!')">DESPEDIR</button>
+<br>
+<br>
+
+<!--  Realiza una página en HTML, que disponga de dos botones, uno de ellos tendrá el texto "Añadir" y al pulsarlo insertará una fruta nueva en el array de frutas de nuestro ejemplo y le mostratá el array al usuario; el otro tendrá el texto "Borrar" y eliminará la última fruta del array.-->
+
+<button onclick="let frutas=['Manzana', 'Banana']; alert(frutas)">Stock de Frutería</button>
+<br>
+<br>
+<button onclick="frutas=['Manzana', 'Banana'];frutas.push('Pera');alert(frutas)">Añadir fruta</button>
+<br>
+<br>
+<button onclick="frutas=['Manzana', 'Banana', 'Pera'];frutas.pop();alert(frutas); alert('Hasta pronto')">Quitar fruta</button>
+
+</body>
+</html>

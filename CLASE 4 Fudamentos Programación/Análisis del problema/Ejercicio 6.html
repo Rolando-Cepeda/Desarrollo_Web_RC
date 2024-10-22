@@ -24,8 +24,8 @@
          */
 
         function validarUsuario(usuario, contrasena, contrasenaCorrecta) {
-            let intentos = Math.floor(Math.random() * 5) + 1;
-            let tiempoEspera = Math.floor(Math.random() * 16) + 5;
+            let intentos = 5/* Math.floor(Math.random() * 5) + 1 */;
+            let tiempoEspera = 20/* Math.floor(Math.random() * 16) + 5 */;
 
             while (intentos > 0) {
                 if (contrasena === contrasenaCorrecta) {
@@ -42,7 +42,7 @@
         }
 
         // Ejemplo de uso:
-        console.log(validarUsuario("Santiago", "1234", "abcd")); // Resultado variado
+        console.log(validarUsuario("Santiago", "1234", "1234"/* ,"abcd" */)); // Resultado variado
 
 
     </script>

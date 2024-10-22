@@ -4,7 +4,7 @@ console.log(frutas.length);
 let first = frutas[0]; // Manzana
 let last = frutas[frutas.length -1]; // Banana */
 
-var frase = "Hola Mundo!";
+var frase = "BIVENID@S A FRUTERÍAS LOLA";
 alert(frase);
 
 
