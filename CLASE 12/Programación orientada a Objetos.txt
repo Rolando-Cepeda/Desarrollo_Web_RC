@@ -1,0 +1,65 @@
+# ENCAPSULAMIENTO
+	## Público.- Lo ve todo el mundo.
+	## Privado.-  Solo lo ve el dueño.
+
+# Atributos
+	##¿qué partes o características componen a los objetos?
+
+# Métodos
+	##¿qué acciones o comportamientos tienen los objetos?
+
+#Objeto
+	## El primer método que se hará es construir el objeto, método CONSTRUCTOR
+
+# Definición de una clase
+	## Palabra reservada Class, su nombre siempre empezar con mayúscula
+	## Los parámetros que se le pasa al constructor, en javascript los toma como ATRIBUTOS
+	### EJEMPLO:
+
+		class Rectangulo {
+        constructor(alto, ancho) { // Parametros se convierten en ATRIBUTOS.
+        this.alto = alto;
+        this.ancho = ancho;
+		this.atributo = valor
+        }
+    }
+	var r = new Rectangulo(3,4); // new hace referencia al constructor.
+    alert(r.alto+" "+r.ancho);
+
+
+	## this.- Hace referancia a el atributo
+
+# GET.- Para consultar, crea un nuevo atributo.
+
+# SET.- Para modificar el atributo
+
+
+# 12_2 JSON.- Ahora la APIS devuelven JSON, todos los que no son tipos de datos PRIMITIVOS devuelven un JSON.
+	## Todos los que no son datos PRIMITIVOS, son OBJETOS.
+	## Los JSON si empiezan con [] son Arrays con OBJETOS de clave-valor, la clave será ÚNICA.
+	## En JS si las claves tienen una sola palabra 
+		### c3["rojo"] o  c3.rojo
+		### c2["arrayColores"][0]["amarillo"] o  c2.arrayColores[0].amarillo
+		### c1.arrayColores[2].valorHexadecimal
+
+	##  Los JSON si empiezan con {} son objetos con claves y valores.
+	##  Los JSON si empiezan con [] son Arrays con OBJETOS de clave-valor.
+	## 	let a = "{}" ->  string
+	##  let a = {}  -> objeto
+	## console.log(objeto["apellido"]); // Se ponen [], cuando hay espacios entre las claves.
+
+
+# 12_3 Formas Alternativas de Condicional Simple
+	## condición ? codigoTrue : codigoFalse // Si el if no lleva ELSE se pone codigoFalse.
+
+# 12_4 Boolean.- 
+	## Todo lo que no vale FALSE UNDEFINED,NULL, FALSE, es TRUE
+	## Una dirección de memoria es TRUE
+	## Lo que se guarda dentro de una VARIABLE son instancias, direcciones de memoria.
+	## Cada vez haga NEW es una nueva DIRECCIÓN DE MEMORIA.
+	## stringify.- Le paso un OBJETO y me devuelve el JSON.
+		###  console.log(JSON.stringify(x1) == JSON.stringify(x2));
+
+	## JSON.parse.- Le paso un string y me devuelve el objeto.
+
+
