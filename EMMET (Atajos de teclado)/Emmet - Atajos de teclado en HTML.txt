@@ -1,0 +1,79 @@
+# Cómo escribir HTML / CSS más rápido con atajos de Emmet
+	## Emmet es una herramienta de código de código abierto que permite escribir HTML y CSS más
+
+# HTML
+	## Escribe ! y verá que Emmet ha aparecido como sugerencia. Ahora presiona Enter. Ahí lo tiene, una página web HTML básica en blanco lista para usar.
+
+	## Etiquetas Básicas
+		### Para crear etiquetas HTML básicas, simplemente escriba el nombre de la etiqueta y presione Enter.
+		### Intente escribir:
+			* div y luego Enter, o 
+			* h1 Enter, o p Enter.
+		### Estos también funcionan:
+			* bq para un <blockquote>,
+			* hdr para un <header>,
+			* ftr para un <footer>,
+			* btn para un <button> y
+			* sect para una sección.
+
+	## Clases
+		###  Emmet usa la misma forma para referirse a las clases usando un .
+			* div.wrapper —>
+			  <div class="wrapper"></div>
+
+	## ID’s
+		### Los Id funcionan de manera muy similar:
+		* div#hero —>
+		  <div id="hero"></div>
+
+		
+	## Combinatoria
+		### Puede combinar estos juntos:
+			* div#hero.wrapper —>
+			  <div id="hero" class="wrapper"></div>
+
+	## Atributos
+		### También podemos especificar atributos para las etiquetas:
+
+			* img[src="cat.jpg"][alt="foto de gato"] —>
+		      <img src="cat.jpg" 		* alt="foto de gato" />
+
+	## Contenido
+		### Para incluir contenido dentro de la etiqueta, simplemente envolvemos el contenido entre llaves, { }.
+			* p{Esto es un párrafo} —>
+			  <p>Esto es un párrafo</p>
+
+	## Etiquetas hermanos e hijos
+		### Cada vez se pone mejor. También podemos especificar etiquetas hermanos e hijos usando los caracteres + y >.
+
+			* section+section —>
+			  <section></section><section></section>
+			* ul>li —>
+			  <ul><li></li></ul>
+	## Escalando
+		### En este ejemplo, "treparemos" por la estructura HTML usando ^.
+
+			* div+div>p>span+em^bq
+			* Aquí, queríamos que la etiqueta en blockquote estuviera al mismo nivel que el párrafo. Por eso, necesitábamos "trepar". De lo contrario, estaría dentro del párrafo.
+
+	## Agrupar
+		## Si su estructura es muy compleja, es posible que desee agrupar etiquetas en lugar de atravesar trepando.
+			* div>(header>ul>li>a)+footer>p
+
+	## Multiplicación y $
+		## Podemos generar múltiples etiquetas multiplicando (*) y numerando elementos en secuencia usando un signo de dólar ($).
+			* ul>li*5 
+			* ul>li{Item $}*3
+	## Nombres de etiqueta implícitos
+		### Hay ciertas etiquetas que no es necesario escribir y pueden estar implícitas.
+	
+	## Envolver con etiquetas
+		### Habrá ocasiones en las que tenga un código existente que desee envolver con una etiqueta. Podemos hacerlo fácilmente con Emmet.
+
+	## Lorem Ipsum
+		### "Lorem Ipsum" es un texto ficticio utilizado por los desarrolladores para representar datos en una página. 
+			* También se puede definir la cantidad de palabras generadas.
+			  lorem10 te dará 10 palabras de texto aleatorio.
+
+	## EJEMPLO:
+		## ul.mi-lista>lorem10.item-$*5

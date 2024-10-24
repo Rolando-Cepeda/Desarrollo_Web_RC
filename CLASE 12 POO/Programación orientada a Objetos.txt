@@ -62,4 +62,12 @@
 
 	## JSON.parse.- Le paso un string y me devuelve el objeto.
 
+# TODO LO QUE DA FALSE ES TRUE
+
+# Map.- Recorre todos los elementos de un ARRAY.
+	## let productos = ["patatas", "pescado", "naranjas", "manzana"];
+    	let resultado = productos.map(function (producto){return producto + " modificado!"});
+    	console.log(resultado);
+
+## Emmet.-  Es una forma de escribir html y CSS con ATAJOS.
 

@@ -1,0 +1,52 @@
+# Position
+	* pos —> position:relative; (Por defecto es relative)
+	* pos:s —> position:static;
+	* pos:a —> position:absolute;
+	* pos:r —> position:relative;
+	* pos:f —> position:fixed;
+
+# Display
+	* d —> display:block; (Lo predetermina a block)
+	* d:n —> display:none;
+	* d:b —> display:block;
+	* d:f —> display:flex;
+	* d:if —> display:inline-flex;
+	* d:i —> display:inline;
+	* d:ib —> display:inline-block;
+	
+# Cursor
+	* cur —> cursor:pointer;
+# Color
+	* c —> color:#000;
+	* c:r —> color:rgb(0, 0, 0);
+	* c:ra —> color:rgba(0, 0, 0, .5);
+	* op —> opacity: ;
+
+# Margin & Padding
+	* m —> margin: ;
+	* m:a —> margin:auto;
+	* mt —> margin-top: ;
+	* mr —> margin-right: ;
+	* mb —> margin-bottom: ;
+	* ml —> margin-left: ;
+	* p —> padding: ;
+	* pt —> padding-top: ;
+	* pr —> padding-right: ;
+	* pb —> padding-bottom: ;
+	* pl —> padding-left: ;
+
+# Box Sizing
+	* bxz —> box-sizing:border-box;
+
+# Width
+	*w —> width: ;
+	*h —> height: ;
+	*maw —> max-width: ;
+	*mah —> max-height: ;
+	*miw —> min-width: ;
+	*mih —> min-height: ;
+
+# Border
+	* bd —> border: ;
+	* bd+ —> border:1px solid #000;
+	* bd:n —> border:none;
