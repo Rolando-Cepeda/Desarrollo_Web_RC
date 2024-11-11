@@ -1,0 +1,29 @@
+# Todo lo que NO es FALSE "falsy" es TRUE.
+	## En programación, ciertos valores se consideran "falsy" (falsos) porque son tratados como false en contextos lógicos. Aquí te muestro los más comunes en JavaScript y en otros lenguajes de programación:
+
+	1.- false - El valor booleano falso.
+	2.- 0 - El número cero.
+	3.- "" o '' - Una cadena de texto vacía.
+	4.- null - Representa la ausencia de un valor.
+	5.- undefined - Significa que una variable ha sido declarada pero no se le ha asignado valor.
+	6.- NaN - Representa un valor numérico inválido o "Not-a-Number".
+	## Estos valores se consideran false cuando se evalúan en condiciones lógicas, como en una instrucción if o en una operación de comparación. Todos los demás valores suelen ser true o "truthy", y  se tratan como verdaderos en contextos lógicos.
+
+# En un JSON ( (JavaScript Object Notation))
+	## ## En un objeto de JavaScript, puedo AÑADIR una clave si no existe y SOBREESCRIBIRLA si ya existe. JSON, como formato de texto, debe convertirse a objeto para poder modificar sus claves."
+
+	## Es un formato de texto que representa DATOS ESTRUCTURADOS.
+	## JSON se usa comúnmente para intercambiar datos entre un servidor y un cliente (por ejemplo, en aplicaciones web).
+	## Su estructura es muy parecida a la de un objeto en JavaScript, pero JSON es solo texto y debe respetar ciertas reglas de formato. Por ejemplo:
+	## Las claves deben ir entre comillas dobles ("key": "value").
+	## JSON no admite funciones, métodos ni variables especiales como undefined.
+
+# En los OBJETOS de JavaScript, cada clave tiene un valor asociado, y accedes al valor proporcionando la clave.
+	
+	## Es una ESTRUCTURA DE DATOS nativa en JavaScript.
+	## Los objetos pueden almacenar pares de clave-valor, al igual que JSON, pero pueden incluir otros tipos de datos además de cadenas de texto ## ## (como 	undefined y Symbol) y funciones (métodos).
+	## Un objeto se usa directamente en el código para almacenar y manipular datos.
+
+# "Los ARRAYS contienen solo valores ordenados, y para acceder a ellos usamos su índice numérico, no una clave."
+	## Los arrays contienen valores ordenados y no tienen "claves" como un objeto.
+	## En los arrays, accedes a los elementos usando un índice numérico que representa la posición (comenzando desde 0), no una clave.
