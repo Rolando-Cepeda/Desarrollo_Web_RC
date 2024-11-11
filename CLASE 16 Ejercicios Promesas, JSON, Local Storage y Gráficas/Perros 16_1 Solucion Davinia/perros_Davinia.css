@@ -48,3 +48,9 @@ body {
     height: 400px;
     margin-top: 20px;
 }
+/* 
+	** 
+En un JSON, cuando la CLAVE no existe la crea, y si EXISTE la sobreescribe.
+En los OBJETOS, busco la CLAVE para saber su valores.
+Los ARRAYS contienen solo valores, por lo tanto para acceder a ellos , lo hacemos a traves de su CLAVE. 
+*/

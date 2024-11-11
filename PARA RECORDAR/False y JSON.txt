@@ -1,4 +1,4 @@
-# Todo lo que NO es FALSE "falsy" es TRUE.
+# Todo lo que NO es FALSE es TRUE. ("Todo lo que no es falsy es truthy.")
 	## En programación, ciertos valores se consideran "falsy" (falsos) porque son tratados como false en contextos lógicos. Aquí te muestro los más comunes en JavaScript y en otros lenguajes de programación:
 
 	1.- false - El valor booleano falso.

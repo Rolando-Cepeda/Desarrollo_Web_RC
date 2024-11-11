@@ -1,0 +1,64 @@
+# Paso 1: Ejecución inmediata del IIFE
+	## La primera parte del código es una función autoejecutable (IIFE), que se ejecuta inmediatamente:
+
+(function () {
+    localStorage.clear();
+})();
+
+	## Esta función borra todos los datos almacenados en localStorage, limpiando cualquier valor previamente guardado. Esto es lo primero que se ejecuta.
+
+# Paso 2: Declaración de funciones
+	## Las siguientes funciones se declaran en el código, pero no se ejecutan hasta que se llaman explícitamente:
+
+		### crearImg(perro)
+		### random()
+		### pasarARegilla(perro)
+		### obtenerRaza(url)
+		### crearGrafica()
+
+
+	## Detalle de cada función y su propósito
+
+	## 1. crearImg(perro):
+	## Toma un objeto perro con la URL de una imagen.
+	## Busca si ya existe un elemento con id="principal":
+		### Si existe, actualiza su src y llama a pasarARegilla(perro).
+		### Si no existe, crea una nueva imagen con las propiedades src, id, height y width, y la agrega al div con id="perro".
+	## Actualiza el número de imágenes en localStorage incrementando el valor de nImagenes.
+
+	## 2. random():
+		### Realiza una solicitud a una API para obtener una imagen aleatoria de perro.
+		### Al recibir una respuesta, transforma los datos en JSON y pasa el objeto perro a la función crearImg.
+
+	## pasarARegilla(perro):
+	## Se ejecuta cuando el contador de localStorage.nImagenes llega a 20, momento en el que muestra un mensaje y llama a crearGrafica().
+	## De lo contrario, agrega la imagen del perro al contenedor de rejilla:
+		### Crea un div con una clase casilla y un id basado en la raza del perro.
+		### Añade una imagen dentro del div con el src de la imagen y lo anida dentro de un contenedor con id="rejilla".
+
+	# obtenerRaza(url):
+		### Toma una URL y extrae la raza del perro (la quinta parte de la URL) y la devuelve. Este valor se usa como el id de cada casilla en pasarARegilla.
+
+	##crearGrafica():
+		### Crea una gráfica de barras para mostrar la cantidad de perros por raza en el contenedor contenedor-grafica.
+		### Cuenta cada raza en la rejilla y muestra estos datos en la gráfica usando Chart.js.
+
+
+	# Orden de ejecución típico cuando se llama random()
+
+	# El flujo de ejecución general, considerando que el navegador tiene elementos con id="rejilla", id="perro" y id="contenedor-grafica", sería el siguiente:
+
+		## 1. IIFE borra localStorage.
+		## 2. Declaración de funciones para su uso futuro.
+		## 3. Llamada a random() (debería llamarse explícitamente en algún lugar del código para iniciar el proceso).
+		## 4. Dentro de random():
+			### Solicitud a la API para obtener una imagen de perro aleatoria.
+			### Al recibir el dato, crearImg(perro) se llama con el objeto de la imagen del perro.
+		## 5.- Dentro de crearImg(perro):
+			### Verifica o crea una imagen principal en el contenedor #perro.
+			### Actualiza el contador localStorage.nImagenes.
+			### Si nImagenes alcanza 20, llama a crearGrafica(); si no, llama a pasarARegilla(perro).
+		## 6.- Dentro de pasarARegilla(perro):
+			### Se obtiene la raza del perro con obtenerRaza(perro.message).
+			### Se crea y agrega la imagen en un div con clase casilla en el contenedor rejilla.
+# Cuando nImagenes llega a 20, se muestra un mensaje y crearGrafica() crea la gráfica para visualizar la distribución de razas.
